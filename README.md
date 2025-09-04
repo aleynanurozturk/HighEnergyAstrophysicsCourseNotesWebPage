@@ -1,59 +1,56 @@
-Yüksek Enerji Astrofiziği Ders Notları Web Sayfası
-Bu proje, ASP.NET Core MVC ve Entity Framework Core kullanarak geliştirilmiş, güvenli bir "Yüksek Enerji Astrofiziği" ders notları web sitesidir. Amacı, SQL Server veritabanı ile kullanıcı kimlik doğrulama (authentication) ve yetkilendirme (authorization) süreçlerini uygulamalı olarak öğrenmek ve bu bilgileri bir web sitesinde kullanmaktır.
+# High Energy Astrophysics Course Notes Web Page
 
-Sitenin ana işlevi, yalnızca kayıtlı ve giriş yapmış kullanıcıların ders notlarına erişmesine olanak sağlamaktır. Bu proje aynı zamanda bir öğrenme süreci ürünüdür ve aşağıdaki temel ASP.NET Core MVC konularının pratik uygulamasını içermektedir:
+**High Energy Astrophysics Course Notes Web Page** is a secure web application developed with **ASP.NET Core MVC** and **Entity Framework Core**. The project's main goal is to provide hands-on experience with user **authentication** and **authorization** processes using a **SQL Server** database.
 
-Kullanılan Teknolojiler
-ASP.NET Core MVC: Web uygulamasının temel çatısı.
+---
 
-Entity Framework Core: Veritabanı işlemleri için kullanılan ORM (Object-Relational Mapper).
+### Project Features
 
-ASP.NET Core Identity: Kullanıcı yönetimi (kayıt, giriş, şifre sıfırlama vb.) için güçlü bir kimlik doğrulama sistemi.
+* **User Registration System:** A secure system for new users to register, complete with an email verification process.
+* **Custom Login & Registration Pages:** User-friendly custom interfaces that replace the standard ASP.NET Core Identity pages.
+* **Secure Areas:** Restricted pages that are accessible only to logged-in users.
+* **Password Management:** A system that allows users to securely reset their passwords.
+* **Database Integration:** Implementation of data operations (Create, Read, Update, Delete) with SQL Server using Entity Framework Core.
+* **MVC Architecture:** The project is built with a standard **Model-View-Controller** pattern to separate data, presentation, and control logic.
 
-SQL Server: Kullanıcı verilerini ve diğer site verilerini saklamak için kullanılan veritabanı.
+---
 
-C#: Projenin temel programlama dili.
+### Technologies Used
 
-HTML, CSS, JavaScript: Web sitesinin ön yüzü için kullanılan standart web teknolojileri.
+* **Architecture:** ASP.NET Core MVC
+* **Backend:** C#
+* **Database:** SQL Server
+* **ORM:** Entity Framework Core
+* **Identity:** ASP.NET Core Identity
+* **Frontend:** HTML, CSS, JavaScript
 
-Projenin Temel Özellikleri
-Kullanıcı Kayıt Sistemi: Yeni kullanıcıların güvenli bir şekilde kaydolabilmesi. E-posta doğrulama sistemi entegre edilmiştir.
+---
 
-Özel Giriş ve Kayıt Sayfaları: Standart Identity sayfaları yerine, özelleştirilmiş ve kullanıcı dostu arayüzler.
+### Setup and Running the Project
 
-Güvenli Alanlar: Yalnızca giriş yapmış kullanıcıların erişebildiği yetkilendirilmiş (authorized) sayfalar.
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/aleynanurozturk/HighEnergyAstrophysicsCourseNotesWebPage.git](https://github.com/aleynanurozturk/HighEnergyAstrophysicsCourseNotesWebPage.git)
+    ```
+2.  Open the project in Visual Studio.
+3.  Configure your SQL Server **connection string** in the `appsettings.json` file.
+4.  Apply database migrations from the Package Manager Console (`Tools > NuGet Package Manager > Package Manager Console`):
+    ```bash
+    Update-Database
+    ```
+5.  Run the application (`F5`).
 
-Şifre Yönetimi: Kullanıcılara şifrelerini unutmaları durumunda sıfırlama imkanı sunan bir sistem.
+---
 
-Veritabanı Entegrasyonu: Entity Framework Core ile SQL Server'a veri ekleme, okuma ve güncelleme işlemleri.
+### Future Plans
 
-Model-View-Controller (MVC) Yapısı: Proje, veri, görünüm ve kontrol mantığını ayıran standart bir MVC mimarisiyle tasarlanmıştır.
+* Adding a Content Management System (CMS) for course notes.
+* Developing user profile pages.
+* Implementing content filtering and search functionality.
+* Further improving responsive design.
 
-Kurulum ve Çalıştırma
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+---
 
-Projeyi klonlayın:
+### Contribution
 
-git clone [https://github.com/aleynanurozturk/HighEnergyAstrophysicsCourseNotesWebPage.git](https://github.com/aleynanurozturk/HighEnergyAstrophysicsCourseNotesWebPage.git)
-
-Visual Studio'da projeyi açın.
-
-appsettings.json dosyasında SQL Server bağlantı dizgisi (connection string) ayarlarınızı yapın.
-
-Paket yöneticisi konsolunu (Tools > NuGet Package Manager > Package Manager Console) açarak veritabanı geçişlerini (migrations) uygulayın:
-
-Update-Database
-
-Uygulamayı çalıştırın (F5 tuşu).
-
-Gelecek Planları
-Ders notları için içerik yönetim sistemi (CMS) eklenmesi.
-
-Kullanıcı profili sayfalarının geliştirilmesi.
-
-İçeriklerin kategori bazlı filtrelenmesi ve aranabilir hale getirilmesi.
-
-Duyarlı tasarımın (responsive design) daha da iyileştirilmesi.
-
-Katkıda Bulunma
-Bu proje bir öğrenme süreci ürünüdür ve geliştirilmeye açıktır. Her türlü öneri ve katkı memnuniyetle karşılanır.
+This project is a result of a learning journey and is open to contributions. All suggestions and improvements are welcome.
