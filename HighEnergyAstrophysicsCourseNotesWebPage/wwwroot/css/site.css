@@ -1,0 +1,87 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+main {
+    flex: 1;
+    padding: 0;
+}
+
+
+.footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+.main-content-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.homepage-bg {
+    background-image: url('/images/high-energy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-shadow-lg {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.nav-separator {
+    padding: 0 5px;
+    color: #6c757d;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.nav-link {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.nav-item .text-dark {
+    font-weight: bold;
+    font-size: 1rem;
+}
